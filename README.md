@@ -36,7 +36,7 @@ Notes de tests potentiellement intéressants non réalisés :
 - https://www.scaswebsite.com/portfolio/scas-child-overview/
 - https://pspp.benpfaff.org/ pour convertir les données SPSS en CSV.
 - https://numiqo.fr/tutorial/pearson-correlation
-
+- https://medium.com/@lamunozs/dealing-with-high-skewed-data-a-practical-guide-part-iii-19fc38a10a7c pour corriger la skewness des données.
 
 # Résultats
 
