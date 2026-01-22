@@ -25,14 +25,14 @@ Nous définissons notre hypothèse nulle (H0) et notre hypothèse alternative (H
 Pour tester notre hypothèse, nous avons utilisé les tests statistiques suivants :
 1. Test de corrélation de Pearson + Spearman pour évaluer la relation linéaire entre le temps d'écran et la moyenne générale.
 2. Régression linéaire pour modéliser l'impact du temps d'écran sur la moyenne générale.
-3. TODO RETIRER SI NON UTILISÉ Analyse de variance (ANOVA) pour comparer les moyennes générales entre différents groupes de temps d'écran.
+3. Réression linéaire multivariée pour modéliser l'impact du temps d'écran sur la moyenne générale en tenant compte des autres variables.
 
 # Méthodologie
 
 Il y a 3 notebooks Jupyter associés à ce projet :
 - Paul.ipynb : analyse de la corrélation entre le temps d'écran et la moyenne générale.
 - Corentin.ipynb : régression linéaire pour modéliser l'impact du temps d'écran sur la moyenne générale, et calculs des R² sur d'autres variables pour explorer d'autres facteurs potentiels qui impactent la performance académique.
-- Charly.ipynb : TODO
+- Charly.ipynb : régression linéaire multivariée pour modéliser l'impact du temps d'écran sur la moyenne générale en tenant compte des autres variables et mise en lumière de facteurs corrélés impactant les conclusions rapides.
 
 Chaque notebook contient des explications détaillées sur les étapes de l'analyse, les résultats obtenus, ainsi que des visualisations pour illustrer les conclusions.
 
@@ -45,12 +45,14 @@ Chaque notebook contient des explications détaillées sur les étapes de l'anal
 - https://pspp.benpfaff.org/ pour convertir les données SPSS en CSV.
 - https://numiqo.fr/tutorial/pearson-correlation
 - https://medium.com/@lamunozs/dealing-with-high-skewed-data-a-practical-guide-part-iii-19fc38a10a7c pour corriger la skewness des données.
+ - https://en.wikipedia.org/wiki/Ordinary_least_squares
+ - https://www.statsmodels.org/stable/generated/statsmodels.formula.api.ols.html
 
 # Résultats
 
 Les résultats complets de l'analyse sont disponibles dans les notebooks Jupyter associés. Ce que l'on peut retenir de chaque analyse est résumé ci-dessous :
 - Paul.ipynb : Il existe une corrélation négative significative entre le temps d'écran et la moyenne générale des élèves. Le test de Spearman est plus approprié que celui de Pearson en raison de la non-normalité des données.
+- Charly.ipynb : Il existe une corrélation négative significative entre le temps d'écran et la moyenne générale des élèves malgré une étude approfondie sur la corrélation des différentes variables par OLS.
 
     **Donc, H0 est rejetée, on ne peut pas affirmer qu'il n'y a pas de lien entre le temps d'écran et la moyenne générale des élèves.**
 - Corentin.ipynb : TODO
-- Charly.ipynb : TODO
