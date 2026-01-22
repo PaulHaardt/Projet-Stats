@@ -47,6 +47,7 @@ Chaque notebook contient des explications détaillées sur les étapes de l'anal
 - https://medium.com/@lamunozs/dealing-with-high-skewed-data-a-practical-guide-part-iii-19fc38a10a7c pour corriger la skewness des données.
  - https://en.wikipedia.org/wiki/Ordinary_least_squares
  - https://www.statsmodels.org/stable/generated/statsmodels.formula.api.ols.html
+ - https://fr.wikipedia.org/wiki/Coefficient_de_d%C3%A9termination
 
 # Résultats
 
@@ -55,4 +56,4 @@ Les résultats complets de l'analyse sont disponibles dans les notebooks Jupyter
 - Charly.ipynb : Il existe une corrélation négative significative entre le temps d'écran et la moyenne générale des élèves malgré une étude approfondie sur la corrélation des différentes variables par OLS.
 
     **Donc, H0 est rejetée, on ne peut pas affirmer qu'il n'y a pas de lien entre le temps d'écran et la moyenne générale des élèves.**
-- Corentin.ipynb : TODO
+- Corentin.ipynb : Grâce au coefficient de détermination, on trouve qu'il y a un lien très faible entre le temps d'écran et la moyenne générale des élèves : 12% des performances peuvent être expliquées par le temps d'écran, le reste est dû à d'autres variables.
